@@ -1,11 +1,9 @@
 import { css } from 'styled-components';
-import { fontBreakPoints } from './themeUtils';
-
+import { fontBreakPoints } from './utils/fontBreakPoints';
 
 const fontVariants = {
     font16: css`
-        ${fontBreakPoints({ xs: 12, md: 14, hd: 16 })};
-
+        ${fontBreakPoints({ xs: 12, md: 14, xl: 32 })};
         font-weight: 700;
     `,
     font20: css`

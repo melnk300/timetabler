@@ -1,7 +1,6 @@
 const fontFormats = [ "woff", "woff2", "ttf" ] as const;
 type fontFormatType = typeof fontFormats[number];
 
-export type fontNameType = keyof typeof fonts 
 
 export type fontType = {
     family: string;
@@ -9,12 +8,13 @@ export type fontType = {
     format: fontFormatType;
 };
 
+export type fontNameType = keyof typeof fonts 
 
 
 
 
-const fonts: Record< string, fontType > = {
-    cuprum: {
+const fonts = {
+    Cuprum: {
         family: 'Cuprum',
         weights: [400, 500, 700],
         format: 'ttf'

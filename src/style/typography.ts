@@ -1,8 +1,10 @@
-import { getFont } from './themeUtils';
+import { fontVariantType } from './fontVariants';
 
-const typography = {
-    h1: getFont('font20'),
-    h2: getFont('font16')
+
+
+const typography: Record<string, fontVariantType> = {
+    h1: 'font20',
+    h2: 'font16'
 };
 
 export type typographyType = keyof typeof typography;

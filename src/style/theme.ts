@@ -1,17 +1,24 @@
 import colors from "./colors";
 import breakpoints from "./breakpoints";
-import fonts from "./fonts";
+import fonts, {fontNameType} from "./fonts";
 import typography from "./fontVariants";
-import * as themeUtils from './themeUtils'
 
-const theme = {
+
+const theme:ITheme = {
     colors,
     breakpoints,
     fonts,
     defaultFont: 'Cuprum',
     typography,
-    ...themeUtils
 };
 
-export type ThemeType = typeof theme;
-export default theme;
+
+export interface ITheme {
+    colors: typeof colors;
+    breakpoints: typeof breakpoints;
+    fonts: typeof fonts;
+    defaultFont: fontNameType;
+    typography: typeof typography;
+}
+
+export default theme
