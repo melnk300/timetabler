@@ -1,0 +1,17 @@
+# Drone CI pipeline
+
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: deploy
+  image: alpine:latest
+  commands:
+    - mkdir -p /root/.ssh
+    - cp .deploy/keys/* /root/.ssh
+    - chown root:root -R /root/.ssh
+    - chmod 0700 -R /root/.ssh
+    - apk add --no-cache openssh-client
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\tForwardAgent yes\n\tIdentityFile ~/.ssh/deploy-server\n\n" > /root/.ssh/config
+    - sh .deploy/deploy.sh
