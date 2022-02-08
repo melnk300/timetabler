@@ -20,4 +20,5 @@ const AuthImageContainer = styled.section`
   width: ${col(16)};
 `
 
+
 export {AuthContainer, AuthBar, AuthImageContainer}

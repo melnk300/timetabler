@@ -14,6 +14,8 @@ const GlobalStyle = createGlobalStyle<{ theme: ITheme }>(
 
     * {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
     ${includeFontsAll()}
