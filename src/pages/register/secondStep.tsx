@@ -4,7 +4,6 @@ import { useRef, useEffect } from "react";
 import AuthPageLayout from "src/components/AuthPageLayout"
 import FormPasswordInput from "src/components/FormPasswordInput"
 import FormInput from "src/components/FormInput";
-import FormCheckbox from "src/components/FormCheclbox";
 import SecondaryButton from "src/components/SecondaryButton";
 import {RegisterTitle, StepFormCounter} from "src/style/pages/register/firstStep";
 import { ButtonsContainer } from "src/style/pages/register/secondStep";

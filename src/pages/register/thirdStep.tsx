@@ -2,9 +2,9 @@ import type { NextPage } from 'next';
 import AuthPageLayout from 'src/components/AuthPageLayout';
 
 import {RegisterTitle, StepFormCounter} from "src/style/pages/register/firstStep";
-import FormInput from "src/components/FormInput";
-import FormCheckbox from "src/components/FormCheclbox";
-import SecondaryButton from "src/components/SecondaryButton";
+import SecondaryButton from "components/SecondaryButton";
+import FormSelect from "components/FormSelect";
+
 
 
 const Home: NextPage = () => {
@@ -12,12 +12,14 @@ const Home: NextPage = () => {
         <AuthPageLayout>
           <form action="">
             <RegisterTitle>Регистрация</RegisterTitle>
-            <StepFormCounter className="font24">Шаг 1 из 3</StepFormCounter>
-            <FormInput placeholder="Номер телефона"/>
-            <FormInput placeholder="Имя"/>
-            <FormInput placeholder="Фамилия"/>
-            <FormInput placeholder="Дата рождения"/>
-            <FormCheckbox description="Согласие на обработку персональных данных"/>
+            <StepFormCounter className="font24">Шаг 3 из 3</StepFormCounter>
+            <FormSelect name="eudcation" placeholder="Образование" items={[
+              {title: 'НСГК', value: 1},
+              {title: 'НСГК', value: 2},
+              {title: 'НСГК', value: 3},
+              {title: 'НСГК', value: 4},
+              {title: 'НСГК', value: 5}
+            ]}/>
             <SecondaryButton>Продолжить</SecondaryButton>
           </form>
         </AuthPageLayout>

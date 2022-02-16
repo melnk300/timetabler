@@ -5,7 +5,7 @@ import cn from "classnames";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import {Label, Placeholder, InputContainer} from "../FormInput/style";
-import IconWithLeft from "./style"
+import IconWithLeft from "../FormInput"
 
 type FormInputProps = {
   placeholder?: string;
