@@ -12,6 +12,7 @@ const ButtonBox = styled.button`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-top: ${vh(35)};
   
   &:hover {
     background: ${({theme}) => theme.colors.hoverSecondaryButton};

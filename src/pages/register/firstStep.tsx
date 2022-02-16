@@ -1,10 +1,10 @@
 import type { NextPage } from 'next';
 import AuthPageLayout from 'src/components/AuthPageLayout';
 
-import {RegisterTitle, StepFormCounter} from "style/pages/register";
-import FormInput from "../components/FormInput";
-import FormCheckbox from "../components/FormCheclbox";
-import SecondaryButton from "../components/SecondaryButton";
+import {RegisterTitle, StepFormCounter} from "src/style/pages/register/firstStep";
+import FormInput from "src/components/FormInput";
+import FormCheckbox from "src/components/FormCheclbox";
+import SecondaryButton from "src/components/SecondaryButton";
 
 
 const Home: NextPage = () => {
