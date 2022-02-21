@@ -4,6 +4,8 @@ import AuthPageLayout from 'src/components/AuthPageLayout';
 import {RegisterTitle, StepFormCounter} from "src/style/pages/register/firstStep";
 import SecondaryButton from "components/SecondaryButton";
 import FormSelect from "components/FormSelect";
+import FormInput from "components/FormInput";
+import {ButtonsContainer} from "style/pages/register/secondStep";
 
 const educationOptions = [
   { value: '1', label: 'Дошкольное' },
@@ -32,7 +34,11 @@ const Home: NextPage = () => {
             <StepFormCounter className="font24">Шаг 3 из 3</StepFormCounter>
             <FormSelect name="eudcation" placeholder="Образование" options={educationOptions}/>
             <FormSelect name="eudcation" placeholder="Ваши увлечения" options={HobbyOptions} isMulti />
-            <SecondaryButton>Продолжить</SecondaryButton>
+            <FormInput name="about-user" placeholder="О себе..." tag="textarea"/>
+            <ButtonsContainer>
+              <SecondaryButton>Обратно</SecondaryButton>
+              <SecondaryButton>Продолжить</SecondaryButton>
+            </ButtonsContainer>
           </form>
         </AuthPageLayout>
     )

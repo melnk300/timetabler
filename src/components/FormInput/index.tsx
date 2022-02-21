@@ -1,4 +1,4 @@
-import {ReactChild, FocusEvent } from 'react';
+import {ReactChild, FocusEvent, ReactNode} from 'react';
 import cn from "classnames";
 import {Label, Placeholder, InputContainer} from "./style";
 import {ChangeEvent, forwardRef, useState} from "react";
@@ -7,12 +7,13 @@ type FormInputProps = {
   placeholder?: string;
   children?: string | ReactChild | ReactChild[];
   noFocus?: boolean;
+  tag?: 'input' | 'textarea';
 };
 
 
 const FormInput = forwardRef<HTMLInputElement,FormInputProps>((props, ref) => {
 
-  const { placeholder, children, noFocus = false } = props;
+  const { placeholder, children, noFocus = false, tag='input' } = props;
 
   const [value, setValue] = useState<string>('')
   const [focus, setFocus] = useState<boolean>(false);
@@ -29,13 +30,15 @@ const FormInput = forwardRef<HTMLInputElement,FormInputProps>((props, ref) => {
       }
     }
   }
+  
+  const TagName = tag;
 
   return (
 
     <Label className={cn({'input_active': value.trim() || focus})}>
       <InputContainer>
-        {placeholder && <Placeholder className="font18">{placeholder}</Placeholder> }
-        <input
+        
+        <TagName
           className="font18"
           ref={ref}
           value={value}
@@ -44,6 +47,7 @@ const FormInput = forwardRef<HTMLInputElement,FormInputProps>((props, ref) => {
           onBlur={changeFocusHandler}
           type="text"
         />
+        {placeholder && <Placeholder className="font18">{placeholder}</Placeholder> }
         {children}
       </InputContainer>
     </Label>
