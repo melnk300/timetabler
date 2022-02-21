@@ -11,20 +11,13 @@ import { ButtonsContainer } from "src/style/pages/register/secondStep";
 
 
 const Home: NextPage = () => {
-  const ref = useRef<HTMLInputElement>();
-
-  useEffect(() => {
-    console.log(ref)
-  });
-
-
   return (
       <AuthPageLayout>
         <form action="">
           <RegisterTitle>Регистрация</RegisterTitle>
           <StepFormCounter className="font24">Шаг 2 из 3</StepFormCounter>
           <FormInput placeholder="Код подтверждения"/>
-          <FormPasswordInput placeholder="Пароль" ref={ ref }/>
+          <FormPasswordInput placeholder="Пароль"/>
           <FormPasswordInput placeholder="Повторите пароль"/>
           <ButtonsContainer>
             <SecondaryButton>Обратно</SecondaryButton>
