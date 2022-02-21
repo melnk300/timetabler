@@ -5,7 +5,7 @@ import cn from "classnames";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import {Label, Placeholder, InputContainer} from "../FormInput/style";
-import IconWithLeft from "../FormInput"
+import IconWithLeft from "../IconWithLeft"
 
 type FormInputProps = {
   placeholder?: string;
@@ -14,7 +14,7 @@ const FormPasswordInput = forwardRef<HTMLInputElement, FormInputProps>((props, r
 
   const { placeholder } = props;
 
-  const [value, setValue] = useState<string>('123');
+  const [value, setValue] = useState<string>('');
   const [focus, setFocus] = useState<boolean>(false);
   const [hidden, setHidden] = useState<boolean>(true);
 

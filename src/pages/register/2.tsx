@@ -1,5 +1,4 @@
 import { NextPage } from "next"
-import { useRef, useEffect } from "react";
 
 import AuthPageLayout from "src/components/AuthPageLayout"
 import FormPasswordInput from "src/components/FormPasswordInput"
@@ -11,11 +10,8 @@ import { ButtonsContainer } from "src/style/pages/register/secondStep";
 
 
 const Home: NextPage = () => {
-  const ref = useRef<HTMLInputElement>();
-
-  useEffect(() => {
-    console.log(ref)
-  });
+ 
+  
 
 
   return (
@@ -24,7 +20,7 @@ const Home: NextPage = () => {
           <RegisterTitle>Регистрация</RegisterTitle>
           <StepFormCounter className="font24">Шаг 2 из 3</StepFormCounter>
           <FormInput placeholder="Код подтверждения"/>
-          <FormPasswordInput placeholder="Пароль" ref={ ref }/>
+          {<FormPasswordInput placeholder="Пароль"/>}
           <FormPasswordInput placeholder="Повторите пароль"/>
           <ButtonsContainer>
             <SecondaryButton>Обратно</SecondaryButton>
