@@ -10,9 +10,6 @@ import { ButtonsContainer } from "src/style/pages/register/secondStep";
 
 
 const Home: NextPage = () => {
- 
-  
-
 
   return (
       <AuthPageLayout>
@@ -20,7 +17,8 @@ const Home: NextPage = () => {
           <RegisterTitle>Регистрация</RegisterTitle>
           <StepFormCounter className="font24">Шаг 2 из 3</StepFormCounter>
           <FormInput placeholder="Код подтверждения"/>
-          {<FormPasswordInput placeholder="Пароль"/>}
+
+          <FormPasswordInput placeholder="Пароль"/>
           <FormPasswordInput placeholder="Повторите пароль"/>
           <ButtonsContainer>
             <SecondaryButton>Обратно</SecondaryButton>
