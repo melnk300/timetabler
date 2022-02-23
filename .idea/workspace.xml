@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a825152-287e-4ad6-8eeb-3138e5cd261b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/FormDatePicker/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FormInput/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormInput/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormInput/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormInput/style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/register/3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/register/3.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/register/1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/register/1.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +48,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="233GndNIqEHJxqR5fy3oJ9uDYJP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -103,7 +110,9 @@
       <workItem from="1644345276738" duration="3930000" />
       <workItem from="1644931176265" duration="66000" />
       <workItem from="1645030335976" duration="3361000" />
-      <workItem from="1645464226883" duration="3330000" />
+      <workItem from="1645464226883" duration="4396000" />
+      <workItem from="1645594102536" duration="3328000" />
+      <workItem from="1645597520647" duration="971000" />
     </task>
     <servers />
   </component>

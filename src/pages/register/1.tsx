@@ -5,6 +5,7 @@ import {RegisterTitle, StepFormCounter} from "src/style/pages/register/firstStep
 import FormInput from "src/components/FormInput";
 import FormCheckbox from "src/components/FormCheclbox";
 import SecondaryButton from "src/components/SecondaryButton";
+import FormDatePicker from "components/FormDatePicker";
 
 
 const Home: NextPage = () => {
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
             <FormInput placeholder="Номер телефона"/>
             <FormInput placeholder="Имя"/>
             <FormInput placeholder="Фамилия"/>
-            <FormInput placeholder="Дата рождения"/>
+            <FormDatePicker/>
             <FormCheckbox description="Согласие на обработку персональных данных"/>
             <SecondaryButton>Продолжить</SecondaryButton>
           </form>

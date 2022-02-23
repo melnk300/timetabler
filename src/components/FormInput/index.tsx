@@ -7,13 +7,15 @@ type FormInputProps = {
   placeholder?: string;
   children?: string | ReactChild | ReactChild[];
   noFocus?: boolean;
+  inputProps?: any,
+  InputProps?: any,
   tag?: 'input' | 'textarea';
 };
 
 
 const FormInput = forwardRef<HTMLInputElement,FormInputProps>((props, ref) => {
 
-  const { placeholder, children, noFocus = false, tag='input' } = props;
+  const { placeholder, children, noFocus = false, tag='input', inputProps, InputProps } = props;
 
   const [value, setValue] = useState<string>('')
   const [focus, setFocus] = useState<boolean>(false);
@@ -46,8 +48,10 @@ const FormInput = forwardRef<HTMLInputElement,FormInputProps>((props, ref) => {
           onFocus={changeFocusHandler}
           onBlur={changeFocusHandler}
           type="text"
+          {...inputProps}
         />
         {placeholder && <Placeholder className="font18">{placeholder}</Placeholder> }
+        {InputProps?.endAdornment}
         {children}
       </InputContainer>
     </Label>
