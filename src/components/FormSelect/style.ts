@@ -40,10 +40,14 @@ const StyledSelect = styled(Select)(
         border-top-right-radius: 0;
         padding-top: 0;
         color: ${theme.colors.grey};
+        z-index: 2;
       }
       &__option--is-selected {
         background: ${theme.colors.selectHover};
         color: inherit;
+      }
+      &__value-container {
+        padding: 6px;
       }
     }
   `

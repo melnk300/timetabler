@@ -20,7 +20,6 @@ type FormSelectProps = {
 
 const FormSelect = forwardRef<Ref<Select>, FormSelectProps>((props, ref) => {
   const {name, options, placeholder, isMulti=false} = props;
-  const {colors} = useContext(ThemeContext);
   
   
   return (
@@ -29,7 +28,6 @@ const FormSelect = forwardRef<Ref<Select>, FormSelectProps>((props, ref) => {
       options={options}
       placeholder={placeholder}
       isMulti={isMulti}
-      
     />
 
   )

@@ -1,67 +1,43 @@
-import styled, {css} from "styled-components";
 import {vh, vw} from "style/utils";
+import {TextField} from "@mui/material";
+import { alpha, styled } from '@mui/material/styles'
 
 
-const Label = styled.label(
-  ({theme: {colors}}) => css`
-
-    height: ${vh(48)};
-    display: inline-block;
-    transition: margin .3s ease;
-    margin-top: ${vh(6)};
-    margin-bottom: ${vh(16)};
-    width: 100%;
-
-    input, textarea {
-      padding: ${vh(14)} ${vw(18)};
-      border: none;
-      border-radius: 3px;
-      height: 100%;
-      width: 100%;
-      font-family: inherit;
-      resize: none;
-
-      &:focus {
-        outline: 3px ${colors.secondary} solid;
-      }
+const StyledTextField = styled(TextField)(({ theme }) => ({
+  '&': {
+    marginBottom: 10,
+  
+  },
+  '& input': {
+  
+  },
+  
+  '& .MuiFilledInput-root': {
+    backgroundColor: '#ffffff',
+  
+    border: '1px solid #e2e2e1',
+    overflow: 'hidden',
+    borderRadius: 4,
+    transition: theme.transitions.create([
+      'border-color',
+      'background-color',
+      'box-shadow',
+    ]),
+    '&:hover': { backgroundColor: '#ffffff'},
+    '&::before': { content: 'none'},
+    '&::after': { content: 'none'},
+    
+    '&.Mui-focused': {
+      boxShadow: `${alpha(theme.palette.secondary.main, 0.25)} 0 0 0 2px`,
+      borderColor: theme.palette.secondary.main,
+      borderWidth: 0,
+      backgroundColor: '#ffffff',
+    },
+    '& label': {
+      backgroundColor: 'red'
     }
-
-    textarea {
-      height: ${vh(110)};
-    }
-
-    &.input_active {
-      margin-top: ${vh(28)};
-      margin-bottom: ${vh(18)};
-
-    }
-    textarea+span {
-      top: ${vh(25)};
-    }
-  `)
-
-const InputContainer = styled.div`
-  position: relative;
-  width: 100%;
-`
-
-const Placeholder = styled.span(
-  ({theme: {colors}}) => css`
-    color: ${colors.grey};
-    position: absolute;
-    left: ${vw(15)};
-    top: 50%;
-    transform: translateY(-50%);
-    transition: left .3s ease, top .3s ease, transform .3s ease;
-
-    .input_active & {
-      color: ${colors.white};
-      left: 0;
-      top: ${vh(-20)};
- 
-    }
-
-  `)
+  },
+}));
 
 
-export {Label, Placeholder, InputContainer}
+export default StyledTextField;

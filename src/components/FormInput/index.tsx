@@ -2,6 +2,7 @@ import {ReactChild, FocusEvent, ReactNode} from 'react';
 import cn from "classnames";
 import {Label, Placeholder, InputContainer} from "./style";
 import {ChangeEvent, forwardRef, useState} from "react";
+import StyledTextField from "./style";
 
 type FormInputProps = {
   placeholder?: string;
@@ -13,7 +14,7 @@ type FormInputProps = {
 };
 
 
-const FormInput = forwardRef<HTMLInputElement,FormInputProps>((props, ref) => {
+const FormInput = ((props) => {
 
   const { placeholder, children, noFocus = false, tag='input', inputProps, InputProps } = props;
 
@@ -36,25 +37,36 @@ const FormInput = forwardRef<HTMLInputElement,FormInputProps>((props, ref) => {
   const TagName = tag;
 
   return (
+    
+      <StyledTextField
+        label={placeholder}
+        variant="filled"
+        InputProps={{ disableUnderline: true }}
+        color="primary"
+        // size="small"
+        fullWidth
+        {...props}
+      />
+    
 
-    <Label className={cn({'input_active': value.trim() || focus})}>
-      <InputContainer>
-        
-        <TagName
-          className="font18"
-          ref={ref}
-          value={value}
-          onChange={changeValueHandler}
-          onFocus={changeFocusHandler}
-          onBlur={changeFocusHandler}
-          type="text"
-          {...inputProps}
-        />
-        {placeholder && <Placeholder className="font18">{placeholder}</Placeholder> }
-        {InputProps?.endAdornment}
-        {children}
-      </InputContainer>
-    </Label>
+    // <Label className={cn({'input_active': value.trim() || focus})}>
+    //   <InputContainer>
+    //
+    //     <TagName
+    //       className="font18"
+    //       ref={ref}
+    //       value={value}
+    //       onChange={changeValueHandler}
+    //       onFocus={changeFocusHandler}
+    //       onBlur={changeFocusHandler}
+    //       type="text"
+    //       {...inputProps}
+    //     />
+    //     {placeholder && <Placeholder className="font18">{placeholder}</Placeholder> }
+    //     {InputProps?.endAdornment}
+    //     {children}
+    //   </InputContainer>
+    // </Label>
   );
 });
 

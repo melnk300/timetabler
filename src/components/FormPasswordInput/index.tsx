@@ -6,6 +6,9 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import {Label, Placeholder, InputContainer} from "../FormInput/style";
 import IconWithLeft from "../IconWithLeft"
+import {IconButton, InputAdornment, OutlinedInput} from "@mui/material";
+import FormInput from "components/FormInput";
+import { Visibility, VisibilityOff } from '@mui/icons-material';
 
 type FormInputProps = {
   placeholder?: string;
@@ -15,32 +18,30 @@ const FormPasswordInput = forwardRef<HTMLInputElement, FormInputProps>((props, r
   const { placeholder } = props;
 
   const [value, setValue] = useState<string>('');
-  const [focus, setFocus] = useState<boolean>(false);
   const [hidden, setHidden] = useState<boolean>(true);
-
-  const changeValueHandler = (e: ChangeEvent<HTMLInputElement>) => {
-    setValue(e.target.value);
+  
+  
+  const handleMouseDownPassword = (event: MouseEvent) => {
+    event.preventDefault();
   };
 
   return (
-      <Label className={cn({'input_active': value.trim() || focus})}>
-        <InputContainer>
-          {placeholder && <Placeholder className="font18">{placeholder}</Placeholder> }
-          <input
-              className="font18"
-              ref={ref}
-              value={value}
-              onChange={changeValueHandler}
-              onFocus={()=>setFocus(true)}
-              onBlur={()=>setFocus(false)}
-              type={hidden ? "password" : "text"}
-          />
-          {hidden ?
-          <IconWithLeft><FaEye onClick={()=>setHidden(false)} /></IconWithLeft>
-          : <IconWithLeft><FaEyeSlash onClick={()=>setHidden(true)} /></IconWithLeft>
-          }
-        </InputContainer>
-      </Label>
+    <FormInput
+      label={placeholder}
+      type={ hidden ? 'password': 'text' }
+      InputProps={{endAdornment:
+        <InputAdornment position="end">
+          <IconButton
+            aria-label="toggle password visibility"
+            onClick={() => setHidden(prev => !prev)}
+            onMouseDown={handleMouseDownPassword}
+            edge="end"
+          >
+            {hidden ? <VisibilityOff /> : <Visibility />}
+          </IconButton>
+        </InputAdornment>
+      }}
+    />
   );
 });
 
