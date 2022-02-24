@@ -1,23 +1,16 @@
 import * as React from 'react';
-import {ChangeEvent, forwardRef, useState} from "react";
-import cn from "classnames";
+import {forwardRef, MouseEvent, useState} from "react";
 
-import { FaEye, FaEyeSlash } from "react-icons/fa";
-
-import {Label, Placeholder, InputContainer} from "../FormInput/style";
-import IconWithLeft from "../IconWithLeft"
-import {IconButton, InputAdornment, OutlinedInput} from "@mui/material";
+import {IconButton, InputAdornment} from "@mui/material";
 import FormInput from "components/FormInput";
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 
 type FormInputProps = {
   placeholder?: string;
 };
-const FormPasswordInput = forwardRef<HTMLInputElement, FormInputProps>((props, ref) => {
+const FormPasswordInput = forwardRef<HTMLInputElement, FormInputProps>((props) => {
 
   const { placeholder } = props;
-
-  const [value, setValue] = useState<string>('');
   const [hidden, setHidden] = useState<boolean>(true);
   
   
@@ -27,7 +20,7 @@ const FormPasswordInput = forwardRef<HTMLInputElement, FormInputProps>((props, r
 
   return (
     <FormInput
-      label={placeholder}
+      placeholder={placeholder}
       type={ hidden ? 'password': 'text' }
       InputProps={{endAdornment:
         <InputAdornment position="end">

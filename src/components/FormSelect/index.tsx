@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { forwardRef, Ref, useContext } from "react";
+import { forwardRef, Ref } from "react";
 
 import Select from 'react-select'
 import {StyledSelect} from "./style";
-import {ThemeContext} from "styled-components";
+
 
 
 
@@ -18,8 +18,8 @@ type FormSelectProps = {
 
 
 
-const FormSelect = forwardRef<Ref<Select>, FormSelectProps>((props, ref) => {
-  const {name, options, placeholder, isMulti=false} = props;
+const FormSelect = forwardRef<Ref<Select>, FormSelectProps>((props) => {
+  const { options, placeholder, isMulti=false} = props;
   
   
   return (

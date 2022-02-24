@@ -5,7 +5,7 @@ import {useState} from "react";
 
 
 
-const FormDatePicker = (props) => {
+const FormDatePicker = () => {
   const [value, setValue] = useState<any>(null)
   
   return (

@@ -1,6 +1,6 @@
 import styled, {css} from "styled-components";
 import Select from 'react-select'
-import {vh, vw} from "style/utils";
+import { vh } from "style/utils";
 
 
 const StyledSelect = styled(Select)(

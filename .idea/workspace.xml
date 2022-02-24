@@ -5,25 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a825152-287e-4ad6-8eeb-3138e5cd261b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/register/[step].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/mui-theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FormDatePicker/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormDatePicker/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FormInput/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormInput/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FormInput/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormInput/style.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FormPasswordInput/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormPasswordInput/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormPasswordInput/style.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FormSelect/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormSelect/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FormSelect/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormSelect/style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RegisterForm/FirstStep.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RegisterForm/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RegisterForm/style.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/register/1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registerSteps/1.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/register/2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registerSteps/2.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/register/3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registerSteps/3.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +117,7 @@
       <workItem from="1645464226883" duration="4396000" />
       <workItem from="1645594102536" duration="3328000" />
       <workItem from="1645597520647" duration="9660000" />
-      <workItem from="1645714996863" duration="6394000" />
+      <workItem from="1645714996863" duration="7579000" />
     </task>
     <servers />
   </component>
