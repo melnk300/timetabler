@@ -1,5 +1,6 @@
 import FormSelect from "components/FormSelect";
 import FormInput from "components/FormInput";
+import FormStepContainer from "components/FormStepContainer";
 
 
 const educationOptions = [
@@ -23,11 +24,11 @@ const HobbyOptions = [
 
 const RegisterStep3 = () => {
   return (
-    <>
+    <FormStepContainer>
       <FormSelect name="eudcation" placeholder="Образование" options={educationOptions}/>
       <FormSelect name="eudcation" placeholder="Ваши увлечения" options={HobbyOptions} isMulti/>
       <FormInput name="about-user" placeholder="О себе..." multiline maxRows={5}/>
-    </>
+    </FormStepContainer>
   )
 };
 

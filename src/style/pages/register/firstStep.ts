@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {vw} from "style/utils";
+import {motion} from "framer-motion";
 
 const RegisterTitle = styled.div`
   font-size: ${vw(66)};
@@ -7,7 +8,7 @@ const RegisterTitle = styled.div`
   margin-bottom: 5px;
 `
 
-const StepFormCounter = styled.div`
+const StepFormCounter = styled(motion.div)`
   margin-bottom: 25px;
 `
 

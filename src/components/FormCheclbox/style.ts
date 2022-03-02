@@ -4,7 +4,7 @@ import {vh, vw} from "style/utils";
 
 const CheckBoxLabel = styled.label`
   margin-top: ${vh(18)};
-  margin-bottom: ${vh(35)};
+  //margin-bottom: ${vh(35)};
   
   display: inline-flex;
   align-items: center;
