@@ -34,7 +34,7 @@ const Register: NextPage = () => {
   
   return (
     <AuthPageLayout>
-      <motion.form
+      <motion.div
         style={{height: 'auto'}}
       >
         <RegisterTitle>Регистрация</RegisterTitle>
@@ -44,7 +44,7 @@ const Register: NextPage = () => {
           <RenderStep {...{step, setStep}}/>
         </AnimatePresence>
         
-      </motion.form>
+      </motion.div>
     </AuthPageLayout>
   )
 }

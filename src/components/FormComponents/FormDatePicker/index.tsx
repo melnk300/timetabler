@@ -1,6 +1,6 @@
 import DatePicker from '@mui/lab/DatePicker';
 
-import FormInput from "components/FormComponents/FormInput";
+import {UnControlledFormInput} from "components/FormComponents/FormInput";
 import {useState} from "react";
 
 
@@ -16,7 +16,7 @@ const FormDatePicker = () => {
       mask="__.__.____"
       
       onChange={(newValue) => setValue(newValue)}
-      renderInput={(params) => <FormInput {...params} />}
+      renderInput={(params) => <UnControlledFormInput {...params} />}
     />
   )
 }

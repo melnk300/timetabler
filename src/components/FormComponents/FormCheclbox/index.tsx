@@ -1,12 +1,12 @@
 import * as React from 'react';
 import cn from "classnames";
 import {CheckBoxLabel, CheckboxContainer, CheckboxDeskription} from "./style";
-import {ChangeEvent, forwardRef, useState} from "react";
+import {ChangeEvent, useState} from "react";
 
 type FormInputProps = {
   description?: string;
 };
-const FormCheckbox = forwardRef<HTMLInputElement,FormInputProps>((props, ref) => {
+const FormCheckbox = (props: FormInputProps) => {
 
   const {description} = props;
   const [value, setValue] = useState<boolean>(false);
@@ -20,7 +20,6 @@ const FormCheckbox = forwardRef<HTMLInputElement,FormInputProps>((props, ref) =>
     <CheckBoxLabel className={cn({'input_checked': value, 'input_focused': focus })}>
       <CheckboxContainer>
         <input
-          ref={ref}
           type="checkbox"
           onChange={changeValueHandler}
           onFocus={()=>setFocus(true)}
@@ -30,7 +29,7 @@ const FormCheckbox = forwardRef<HTMLInputElement,FormInputProps>((props, ref) =>
       { description && <CheckboxDeskription>{description}</CheckboxDeskription> }
     </CheckBoxLabel>
   )
-});
+};
 
 
 FormCheckbox.displayName = "FormCheckbox";

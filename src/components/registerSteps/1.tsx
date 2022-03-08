@@ -1,4 +1,5 @@
 import {Dispatch, SetStateAction} from "react";
+import { FormProvider, useForm } from "react-hook-form";
 
 import FormInput from "src/components/FormComponents/FormInput";
 import FormCheckbox from "src/components/FormComponents/FormCheclbox";
@@ -13,16 +14,26 @@ interface RegisterStep1Props {
 
 const RegisterStep1 = (props:RegisterStep1Props) => {
   const {setStep} = props;
+  
+  const methods = useForm();
+  const {
+    handleSubmit,
+    reset,
+    control,
+    setValue,
+    watch
+  } = methods;
+  const onSubmit = (data: any) => console.log(data);
 
   return (
     <FormStepContainer>
-      <FormInput placeholder="Номер телефона"/>
-      <FormInput placeholder="E-mail"/>
-      <FormInput placeholder="Имя"/>
-      <FormInput placeholder="Фамилия"/>
+      <FormInput name="user-phone" label="Номер телефона" control={control}/>
+      <FormInput name="email" label="e-mail" control={control}/>
+      <FormInput name="first-name" label="Имя" control={control}/>
+      <FormInput name="last-name" label="Фамилия" control={control}/>
       <FormDatePicker/>
       <FormCheckbox description="Согласие на обработку персональных данных"/>
-      <SecondaryButton onClick={()=>setStep(2)}>Продолжить</SecondaryButton>
+      <SecondaryButton onClick={handleSubmit(onSubmit)}>Продолжить</SecondaryButton>
     </FormStepContainer>
   )
 };
