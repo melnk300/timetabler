@@ -2,7 +2,7 @@ import * as React from 'react';
 import {forwardRef, MouseEvent, useState} from "react";
 
 import {IconButton, InputAdornment} from "@mui/material";
-import FormInput from "components/FormInput";
+import FormInput from "components/FormComponents/FormInput";
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 
 type FormInputProps = {

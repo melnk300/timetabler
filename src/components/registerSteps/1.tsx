@@ -1,11 +1,19 @@
+import {Dispatch, SetStateAction} from "react";
 
-import FormInput from "src/components/FormInput";
-import FormCheckbox from "src/components/FormCheclbox";
-import FormDatePicker from "components/FormDatePicker";
-import FormStepContainer from "components/FormStepContainer";
+import FormInput from "src/components/FormComponents/FormInput";
+import FormCheckbox from "src/components/FormComponents/FormCheclbox";
+import FormDatePicker from "components/FormComponents/FormDatePicker";
+import FormStepContainer from "components/FormComponents/FormStepContainer";
+import SecondaryButton from "components/SecondaryButton";
 
 
-const RegisterStep1 = () => {
+interface RegisterStep1Props {
+  setStep: Dispatch<SetStateAction<number>>
+}
+
+const RegisterStep1 = (props:RegisterStep1Props) => {
+  const {setStep} = props;
+
   return (
     <FormStepContainer>
       <FormInput placeholder="Номер телефона"/>
@@ -14,6 +22,7 @@ const RegisterStep1 = () => {
       <FormInput placeholder="Фамилия"/>
       <FormDatePicker/>
       <FormCheckbox description="Согласие на обработку персональных данных"/>
+      <SecondaryButton onClick={()=>setStep(2)}>Продолжить</SecondaryButton>
     </FormStepContainer>
   )
 };

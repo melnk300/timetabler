@@ -1,6 +1,6 @@
-import FormSelect from "components/FormSelect";
-import FormInput from "components/FormInput";
-import FormStepContainer from "components/FormStepContainer";
+import FormSelect from "components/FormComponents/FormSelect";
+import FormInput from "components/FormComponents/FormInput";
+import FormStepContainer from "components/FormComponents/FormStepContainer";
 
 
 const educationOptions = [

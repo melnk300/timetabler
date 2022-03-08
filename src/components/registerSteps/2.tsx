@@ -1,6 +1,6 @@
-import FormPasswordInput from "src/components/FormPasswordInput"
-import FormInput from "src/components/FormInput";
-import FormStepContainer from "components/FormStepContainer";
+import FormPasswordInput from "src/components/FormComponents/FormPasswordInput"
+import FormInput from "src/components/FormComponents/FormInput";
+import FormStepContainer from "components/FormComponents/FormStepContainer";
 
 
 

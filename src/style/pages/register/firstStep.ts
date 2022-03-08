@@ -8,9 +8,7 @@ const RegisterTitle = styled.div`
   margin-bottom: 5px;
 `
 
-const StepFormCounter = styled(motion.div)`
-  margin-bottom: 25px;
-`
 
 
-export { RegisterTitle, StepFormCounter }
+
+export { RegisterTitle }

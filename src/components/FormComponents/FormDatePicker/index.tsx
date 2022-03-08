@@ -1,6 +1,6 @@
 import DatePicker from '@mui/lab/DatePicker';
 
-import FormInput from "components/FormInput";
+import FormInput from "components/FormComponents/FormInput";
 import {useState} from "react";
 
 

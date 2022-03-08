@@ -5,24 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a825152-287e-4ad6-8eeb-3138e5cd261b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/notepad/src/Marks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notepad/src/TextArea.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FormStepContainer/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FormStepContainer/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/register/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FormComponents/FormContainer/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FormComponents/StepFormCounter/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FormComponents/StepFormCounter/style.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AuthPageLayout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthPageLayout/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AuthPageLayout/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthPageLayout/style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormCheclbox/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormCheclbox/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormCheclbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormCheclbox/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormCheclbox/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormCheclbox/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormDatePicker/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormDatePicker/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormInput/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormInput/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormInput/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormInput/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormPasswordInput/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormPasswordInput/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormSelect/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormSelect/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormSelect/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormSelect/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormStepContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormStepContainer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormStepContainer/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormStepContainer/style.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SecondaryButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SecondaryButton/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/registerSteps/1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registerSteps/1.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/registerSteps/2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registerSteps/2.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/registerSteps/3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registerSteps/3.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/register/[step].tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/register/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/register/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/pages/register/firstStep.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/pages/register/firstStep.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +87,7 @@
       <recent name="C:\Users\Mark\Desktop\PROJECTS\timetabler-web\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mark\Desktop\PROJECTS\timetabler-web\src\components\FormComponents" />
       <recent name="$PROJECT_DIR$/store/features/tasks" />
       <recent name="$PROJECT_DIR$/store/feature" />
     </key>
@@ -129,7 +132,8 @@
       <workItem from="1645714996863" duration="10562000" />
       <workItem from="1646057424828" duration="17000" />
       <workItem from="1646189531841" duration="2161000" />
-      <workItem from="1646213339060" duration="4155000" />
+      <workItem from="1646213339060" duration="4980000" />
+      <workItem from="1646724174478" duration="2423000" />
     </task>
     <servers />
   </component>
