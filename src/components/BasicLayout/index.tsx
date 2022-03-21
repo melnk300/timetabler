@@ -1,11 +1,11 @@
 import {FC} from "react";
 import {Container} from "@mui/material";
 import Navigation from "../Navigation"
-import { BasicLayout, ContentContainer, Content, Sidebar, SidebarContent } from "./style";
+import { BasicLayoutContent, ContentContainer, Content, Sidebar, SidebarContent } from "./style";
 
-const Navbar: FC = ({ children }) => {
+const BasicLayout: FC = ({ children }) => {
     return (
-        <BasicLayout>
+        <BasicLayoutContent>
             <Navigation />
             <Container>
               <ContentContainer>
@@ -15,8 +15,8 @@ const Navbar: FC = ({ children }) => {
                 </SidebarContent>
               </ContentContainer>
             </Container>
-        </BasicLayout>
+        </BasicLayoutContent>
     )
 }
 
-export default Navbar
+export default BasicLayout

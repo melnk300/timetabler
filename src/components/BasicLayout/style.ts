@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const BasicLayout = styled.div`
+const BasicLayoutContent = styled.div`
   min-height: 100vh;
   background-color: ${({theme}) => theme.colors.basicGray};
 `
@@ -23,4 +23,4 @@ const Sidebar = styled.div`
   margin: 2vh 0;
 `
 
-export {BasicLayout, ContentContainer, Content, Sidebar, SidebarContent}
+export {BasicLayoutContent, ContentContainer, Content, Sidebar, SidebarContent}

@@ -8,7 +8,8 @@ const Home: NextPage = () => {
     <div className="page">
       <h1>INDEX PAGE</h1>
       <br/>
-      <Link href="/register">TO Register</Link>
+        <Link href="/register">TO Register</Link>
+        <Link href="/news">TO News</Link>
     </div>
   )
 }
