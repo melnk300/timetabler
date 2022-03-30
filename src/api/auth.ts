@@ -27,7 +27,7 @@ class AuthService {
         if (res.status == 200) {
             return SuccessResponce(res.data)
         }  else {
-            return ErrorResponce(res.data)
+            return ErrorResponce(res.headers.Err!)
         }
     }
 
@@ -45,7 +45,7 @@ class AuthService {
         if (res.status == 200) {
             return SuccessResponce(res.data)
         }  else {
-            return ErrorResponce(res.data)
+            return ErrorResponce(res.headers.Err!)
         }
     }
 
@@ -65,7 +65,7 @@ class AuthService {
         if (res.status == 200) {
             return SuccessResponce(res.data)
         }  else {
-            return ErrorResponce(res.data)
+            return ErrorResponce(res.headers.Err!)
         }
     }
 
@@ -86,7 +86,7 @@ class AuthService {
         if (res.status == 200) {
             return SuccessResponce(res.data)
         }  else {
-            return ErrorResponce(res.data)
+            return ErrorResponce(res.headers.Err!)
         }
     }
 
