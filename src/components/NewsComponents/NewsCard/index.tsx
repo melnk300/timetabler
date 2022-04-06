@@ -3,7 +3,7 @@ import { Card, CardTitle, CardText } from './style'
 import Link from 'next/link'
 
 interface CardProps {
-  id: number
+  id?: number
   title: string,
   text: string
 }
@@ -14,7 +14,7 @@ const NewsCard: FC<CardProps> = (props) => {
     <Card>
       <CardTitle>{title}</CardTitle>
       <CardText>{text}</CardText>
-      <Link href='/'>Читать новость ></Link>
+      <Link href={`/news/${id}`}>Читать новость ></Link>
     </Card>
   )
 }

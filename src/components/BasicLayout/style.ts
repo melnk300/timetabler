@@ -9,18 +9,18 @@ const ContentContainer = styled.div`
   display: grid;
   grid-template-columns: 5fr 2fr;
   gap: 3vh;
+  padding: 2vh 0;
 `
 
 const Content = styled.div``
 
-const SidebarContent = styled.div`
+const SidebarContainer = styled.div`
   position: relative;
   width: 100%;
 `
 
 const Sidebar = styled.div`
   position: fixed;
-  margin: 2vh 0;
 `
 
-export {BasicLayoutContent, ContentContainer, Content, Sidebar, SidebarContent}
+export {BasicLayoutContent, ContentContainer, Content, Sidebar, SidebarContainer}

@@ -1,7 +1,7 @@
 import {NextPage} from "next";
 import BasicLayout from "components/BasicLayout";
 import NewsCard from "components/NewsComponents/NewsCard";
-import {NewsContent, SidebarPage} from './style'
+import {NewsContent, NewsSidebar} from './style'
 
 const News: NextPage = () => {
   const news = [
@@ -11,11 +11,11 @@ const News: NextPage = () => {
   return (
     <BasicLayout>
       <NewsContent>
-        <NewsCard title={news[0].title} text={news[0].text} id={0}/>
+        <NewsCard title={news[0].title} text={news[0].text} id={1}/>
       </NewsContent>
-      <SidebarPage>
+      <NewsSidebar>
 
-      </SidebarPage>
+      </NewsSidebar>
     </BasicLayout>
   )
 }
