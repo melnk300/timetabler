@@ -5,11 +5,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "@date-io/date-fns": "^2.13.1",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.4.2",

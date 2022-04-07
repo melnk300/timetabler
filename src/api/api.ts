@@ -1,0 +1,1 @@
+const BACK_URL = 'http://localhost/tt-api'
