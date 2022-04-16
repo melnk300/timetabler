@@ -1,7 +1,15 @@
 import styled from "styled-components";
+import fontVariants from "style/fontVariants";
 
-const RecentCoursesTitle = styled.p`
+const RecentCoursesContainer = styled.div`
+  background-color: ${({theme}) => theme.colors.white};
   
 `
 
-export { RecentCoursesTitle }
+const RecentCoursesTitle = styled.p`
+  font: ${fontVariants.font28b}
+`
+
+const RecentCourseName = styled.p``
+
+export { RecentCoursesTitle, RecentCoursesContainer, RecentCourseName }

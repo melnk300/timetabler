@@ -14,6 +14,7 @@ const Card = styled.div`
 
 const CardTitle = styled.h2``
 
-const CardText = styled.p``
+const CardText = styled.p`
+`
 
 export {Card, CardTitle, CardText}

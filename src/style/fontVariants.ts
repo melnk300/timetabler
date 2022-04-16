@@ -17,6 +17,10 @@ const fontVariants = {
     font24: css`
         ${fontBreakPoints({ xs: 16, md: 20, hd: 24 })};
         font-weight: 400;
+    `,
+    font28b: css`
+        ${fontBreakPoints({ xs: 20, md: 24, hd: 28 })};
+        font-weight: 600;
     `
 };
 

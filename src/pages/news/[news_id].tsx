@@ -26,6 +26,7 @@ interface CodeContentI {
   language?: string,
 }
 
+
 type content = string | ImgContentI | CodeContentI
 
 const CurrentNews: NextPage = () => {

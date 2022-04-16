@@ -1,7 +1,7 @@
 import {FC} from "react";
 import {Container} from "@mui/material";
 import Navigation from "../Navigation"
-import { BasicLayoutContent, ContentContainer, Content, Sidebar, SidebarContainer } from "./style";
+import {BasicLayoutContent, ContentContainer, Content, SidebarContainer, SidebarContent} from "./style";
 
 const BasicLayout: FC = ({ children }) => {
     return (
@@ -11,7 +11,9 @@ const BasicLayout: FC = ({ children }) => {
               <ContentContainer>
                 <Content>{children[0]}</Content>
                 <SidebarContainer>
-                  <Sidebar>{children[1]}</Sidebar>
+                  <SidebarContent>
+                    {children[1]}
+                  </SidebarContent>
                 </SidebarContainer>
               </ContentContainer>
             </Container>
