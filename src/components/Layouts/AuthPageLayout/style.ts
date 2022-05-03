@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { col } from 'style/utils/';
+import { col } from 'components/Layouts/AuthPageLayout/style';
 import styled from 'styled-components';
 
 const AuthContainer = styled.main`
