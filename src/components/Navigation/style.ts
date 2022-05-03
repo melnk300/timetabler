@@ -1,11 +1,15 @@
 import styled from "styled-components";
+import {Container} from "@mui/material";
 
 const NavContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
   background-color: ${({theme}) => theme.colors.primary};
   color: ${({theme}) => theme.colors.white};
   padding: 1vh 0;
+`
+
+const NavInner = styled(Container)`
+  display: flex;
+  justify-content: space-between;
 `
 
 const LinkContainer = styled.div`
@@ -42,4 +46,4 @@ const LinkContainer = styled.div`
 }
 `
 
-export {NavContainer, LinkContainer}
+export {NavContainer, LinkContainer, NavInner}

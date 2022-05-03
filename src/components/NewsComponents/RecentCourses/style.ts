@@ -3,13 +3,12 @@ import fontVariants from "style/fontVariants";
 
 const RecentCoursesContainer = styled.div`
   background-color: ${({theme}) => theme.colors.white};
-  
+  padding: 2vh 1vw;
+  border-radius: 10px;
 `
 
 const RecentCoursesTitle = styled.p`
   font: ${fontVariants.font28b}
 `
 
-const RecentCourseName = styled.p``
-
-export { RecentCoursesTitle, RecentCoursesContainer, RecentCourseName }
+export { RecentCoursesTitle, RecentCoursesContainer }

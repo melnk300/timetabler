@@ -1,18 +1,21 @@
 import {FC} from "react";
 import Link from 'next/link'
-import { NavContainer, LinkContainer } from "./style";
+import { NavContainer, LinkContainer, NavInner } from "./style";
 
 const Navigation: FC = () => {
     return (
-        <NavContainer>
-          <LinkContainer>
-            <Link href="/">На главную</Link>
-          </LinkContainer>
-          <LinkContainer>
-            <Link href="/">Вход</Link>/
-            <Link href="/">Регистрация</Link>
-          </LinkContainer>
-        </NavContainer>
+          <NavContainer>
+              <NavInner>
+                <LinkContainer>
+                  <Link href="/">На главную</Link>
+                </LinkContainer>
+                <LinkContainer>
+                  <Link href="/">Вход</Link>/
+                  <Link href="/">Регистрация</Link>
+                </LinkContainer>
+              </NavInner>
+          </NavContainer>
+
     )
 }
 
