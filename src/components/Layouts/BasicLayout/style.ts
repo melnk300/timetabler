@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-const BasicLayoutContent = styled.div`
-  background-color: ${({theme}) => theme.colors.basicGray};
-`
-
 const ContentContainer = styled.div`
   display: grid;
   grid-template-columns: 5fr 2fr;
@@ -24,4 +20,4 @@ const SidebarContent = styled.div`
 `
 
 
-export {BasicLayoutContent, ContentContainer, Content, SidebarContainer, SidebarContent}
+export { ContentContainer, Content, SidebarContainer, SidebarContent}
