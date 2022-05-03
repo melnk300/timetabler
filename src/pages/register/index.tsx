@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import {Dispatch, SetStateAction, useState} from "react";
 import {AnimatePresence, motion} from "framer-motion";
 
-import AuthPageLayout from "components/AuthPageLayout";
+import AuthPageLayout from "components/Layouts/AuthPageLayout";
 import StepFormCounter from "components/FormComponents/StepFormCounter";
 import {RegisterTitle} from "style/pages/register/firstStep";
 
@@ -29,9 +29,9 @@ const RenderStep = (props: RenderStepProps) => {
 
 
 const Register: NextPage = () => {
-  
+
   const [step, setStep] = useState<number>(1);
-  
+
   return (
     <AuthPageLayout>
       <motion.div
@@ -39,11 +39,11 @@ const Register: NextPage = () => {
       >
         <RegisterTitle>Регистрация</RegisterTitle>
         <StepFormCounter step={step}/>
-        
+
         <AnimatePresence initial={false} exitBeforeEnter>
           <RenderStep {...{step, setStep}}/>
         </AnimatePresence>
-        
+
       </motion.div>
     </AuthPageLayout>
   )
