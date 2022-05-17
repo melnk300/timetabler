@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
-function colorToProgressBar(prgoress: number): string {
-  if (prgoress < 20) return 'red'
-  if (prgoress < 50) return 'orange'
-  if (prgoress < 80) return 'lime'
-  if (prgoress > 81) return 'green'
-  return 'red'
+export interface CurrentCourseProgressI {
+  progress: number
 }
 
-interface CurrentCourseProgressI {
-  progress: number
+export function colorForProgressBar(prgoress: number): string {
+  if (prgoress <= 20) return 'red'
+  if (prgoress <= 50) return 'orange'
+  if (prgoress <= 80) return 'lime'
+  if (prgoress >= 81) return 'green'
+  return 'red'
 }
 
 const Course = styled.div`
@@ -18,9 +18,20 @@ const Course = styled.div`
   justify-content: space-between;
   align-items: center;
   
+  @media (max-width: 450px) {
+    margin-left: 0 !important;
+    margin-top: .2em !important;
+    background-color: ${({theme}) => theme.colors.white};
+    padding: .4em .6em;
+  }
+  
   a {
     font-size: 1.2em;
-    color: ${({theme}) => theme.colors.primary}
+    color: ${({theme}) => theme.colors.primary};
+
+    @media (max-width: 450px) {
+      display: none;
+    }
   }
 `
 
@@ -45,7 +56,7 @@ const CourseProgressBar = styled.div<CurrentCourseProgressI>`
     display: block;
     content: '';
     height: 3px;
-    background-color: ${props => colorToProgressBar(props.progress)};
+    background-color: ${props => colorForProgressBar(props.progress)};
     border-radius: 1px;
   }
 `

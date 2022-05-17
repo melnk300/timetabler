@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { col } from 'components/Layouts/AuthPageLayout/style';
+// import { col } from 'components/Layouts/AuthPageLayout/style';
 import styled from 'styled-components';
 
 const AuthContainer = styled.main`
@@ -12,8 +12,10 @@ const AuthBar = styled(motion.section)`
   background: ${({theme}) => theme.colors.primary};
   position: relative;
   color: ${({theme}) => theme.colors.white};
-  width: ${col(8)};
-  padding: 0 ${col(2)};
+  //width: ${col(8)};
+  width: 30vw;
+  //padding: 0 ${col(2)};
+  padding: 0 4vw;
   display: flex;
   align-items: center;
   
@@ -27,7 +29,8 @@ const AuthBar = styled(motion.section)`
 `
 
 const AuthImageContainer = styled.section`
-  width: ${col(16)};
+  //width: ${col(16)};
+  width: 70vw;
 `
 
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Card = styled.div`
+const NewsCardInner = styled.div`
   background-color: ${({theme}) => theme.colors.white};
   border-radius: 10px;
   padding: 2vh 1vw;
@@ -10,11 +10,10 @@ const Card = styled.div`
     color: ${({theme}) => theme.colors.primary};
     font-size: 1.2em;
   }
+
+  @media (max-width: 450px) {
+    padding: 2vh 4vw;
+  }
 `
 
-const CardTitle = styled.h2``
-
-const CardText = styled.p`
-`
-
-export {Card, CardTitle, CardText}
+export {NewsCardInner}

@@ -1,6 +1,7 @@
 import {FC} from "react";
-import { Card, CardTitle, CardText } from './style'
+import { NewsCardInner } from './style'
 import Link from 'next/link'
+import { CardText, CardTitle } from "components/Global/style";
 
 interface CardProps {
   id: number
@@ -11,11 +12,11 @@ interface CardProps {
 const NewsCard: FC<CardProps> = (props) => {
   const { id, title, text } = props
   return (
-    <Card>
+    <NewsCardInner>
       <CardTitle>{title}</CardTitle>
       <CardText>{text}</CardText>
       <Link href={`news/${id}`}>Читать новость &gt;</Link>
-    </Card>
+    </NewsCardInner>
   )
 }
 

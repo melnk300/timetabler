@@ -5,10 +5,29 @@ const RecentCoursesContainer = styled.div`
   background-color: ${({theme}) => theme.colors.white};
   padding: 2vh 1vw;
   border-radius: 10px;
+
+  @media (max-width: 450px) {
+    background: none;
+    padding: 0;
+  }
 `
 
-const RecentCoursesTitle = styled.p`
-  font: ${fontVariants.font28b}
+const RecentCoursesInner = styled.div`
+  @media (max-width: 450px) {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    
+    & > * {
+      margin: 0 15px;
+    }
+  }
 `
 
-export { RecentCoursesTitle, RecentCoursesContainer }
+const CourseDetailsSplitter = styled.hr`
+  @media (max-width: 450px) {
+    display: none;
+  }
+`
+
+export { RecentCoursesContainer, RecentCoursesInner, CourseDetailsSplitter }

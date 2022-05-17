@@ -10,6 +10,7 @@ const Home: NextPage = () => {
       <br/>
         <Link href="/register">TO Register</Link>
         <Link href="/news">TO News</Link>
+        <Link href="/courses">TO courses</Link>
     </div>
   )
 }

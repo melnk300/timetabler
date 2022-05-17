@@ -1,6 +1,7 @@
 import {FC} from "react";
-import {RecentCoursesTitle, RecentCoursesContainer} from "components/NewsComponents/RecentCourses/style";
+import { RecentCoursesContainer, RecentCoursesInner, CourseDetailsSplitter } from "components/NewsComponents/RecentCourses/style";
 import CurrentCourse from './CurseCardForRecent/index'
+import { PageSubTitle } from "components/Global/style";
 
 interface CoursesI {
   id: number
@@ -18,7 +19,17 @@ const RecentCourses: FC = () => {
     {
       id: 1,
       name: 'PythonJnr',
-      progress: 40
+      progress: 100
+    },
+    {
+      id: 2,
+      name: 'PythonJnr',
+      progress: 87
+    },
+    {
+      id: 3,
+      name: 'PythonJnr',
+      progress: 63
     },
   ]
 
@@ -26,9 +37,11 @@ const RecentCourses: FC = () => {
 
   return (
     <RecentCoursesContainer>
-      <RecentCoursesTitle>Ваши курсы:</RecentCoursesTitle>
-      <hr />
-      {Courses}
+      <PageSubTitle>Ваши курсы:</PageSubTitle>
+      <CourseDetailsSplitter />
+      <RecentCoursesInner>
+        {Courses}
+      </RecentCoursesInner>
     </RecentCoursesContainer>
   )
 }

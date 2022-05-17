@@ -1,7 +1,8 @@
 import { FC } from 'react'
 
-import { Course, CourseTitle, MetaContainer, CourseProgressBar } from "./style";
+import { Course, CourseTitle, MetaContainer, CourseProgressBar, CourseLink } from "./style";
 import Link from 'next/link'
+import { CardTitle } from 'components/Global/style';
 
 interface CurrentCurse {
   id: number,
@@ -14,11 +15,15 @@ const CurrentCourse: FC<CurrentCurse> = (props) => {
 
   return (
     <Course>
-      <MetaContainer>
-        <CourseTitle>{name}</CourseTitle>
-        <CourseProgressBar progress={progress} />
-      </MetaContainer>
-      <Link href={`/${id}`}>К курсу</Link>
+      <Link href={`/courses/${id}`}>
+        <>
+          <MetaContainer>
+            <CardTitle>{name}</CardTitle>
+            <CourseProgressBar progress={progress} />
+          </MetaContainer>
+          <Link href={`/courses/${id}`}>К курсу</Link>
+        </>
+      </Link>
     </Course>
   )
 }
