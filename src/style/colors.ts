@@ -6,7 +6,8 @@ const colors = {
   grey: '#5C5B61',
   selectHover: '#DDDDDD',
   grey2: '#8D8D8D',
-  basicGray: '#f0f0f0'
+  basicGray: '#f0f0f0',
+  text: '#313131'
 }
 
 export type colorType = keyof typeof colors;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const PageTitle = styled.p`
-  font-weight: 600;
+  font-weight: 700;
   
   @media (max-width: 450px) {
     font-size: 24px;
@@ -17,6 +17,8 @@ const PageTitle = styled.p`
 `
 
 const PageSubTitle = styled.p`
+  font-weight: 600;
+  
   @media (max-width: 450px) {
     font-size: 22px;
   }
@@ -46,16 +48,18 @@ const CardTitle = styled.p`
   }
 `
 const CardText = styled.p`
+  font-weight: 400;
+  
   @media (max-width: 450px) {
-    font-size: 16px;
+    font-size: 14px;
   }
   
   @media (max-width: 1400px) {
-    font-size: 20px;
+    font-size: 18px;
   }
   
   @media (min-width: 1400px) {
-    font-size: 24px;
+    font-size: 22px;
   }
 `
 export {PageTitle, CardTitle, CardText, PageSubTitle}

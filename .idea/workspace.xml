@@ -4,16 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a825152-287e-4ad6-8eeb-3138e5cd261b" name="Changes" comment="">
+    <list default="true" id="9a825152-287e-4ad6-8eeb-3138e5cd261b" name="Changes" comment="[Feat] Added adaptive">
+      <change afterPath="$PROJECT_DIR$/assets/icons/CodeIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/HeaderIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/LinkIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/Logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/SubHeaderIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/TextIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CoursesComponents/NewLesson/NewLessonBlockSidebar/ContentTypesForNewLesson/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CoursesComponents/NewLesson/NewLessonBlockSidebar/ContentTypesForNewLesson/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CoursesComponents/NewLesson/NewLessonBlockSidebar/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CoursesComponents/NewLesson/NewLessonBlockSidebar/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CoursesComponents/NewLesson/NewLessonEditor/EditableTextBlock/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CoursesComponents/NewLesson/NewLessonEditor/EditableTextBlock/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CoursesComponents/NewLesson/NewLessonEditor/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CoursesComponents/NewLesson/NewLessonEditor/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/courses/lessons/new/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/courses/lessons/new/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/newLesson/newLessonEditorSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormComponents/FormCheclbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormCheclbox/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormComponents/FormDatePicker/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormDatePicker/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormComponents/FormInput/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormInput/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormComponents/FormStepContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormStepContainer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/registerSteps/1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registerSteps/1.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/register/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/register/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormComponents/FormInput/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormComponents/FormInput/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Global/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Global/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/news/[news_id].tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/colors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +59,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -45,6 +68,30 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/CoursesComponents/CourseCard/index.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/CoursesComponents/CourseCard/style.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/CoursesComponents/NewLesson/NewLessonBlockSidebar/ContentTypesForNewLesson/index.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/CoursesComponents/NewLesson/NewLessonBlockSidebar/ContentTypesForNewLesson/style.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/CoursesComponents/NewLesson/NewLessonBlockSidebar/index.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/CoursesComponents/NewLesson/NewLessonBlockSidebar/style.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/FormComponents/FormInput/index.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/FormComponents/FormInput/style.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/FormComponents/StepFormCounter/index.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Global/style.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Layouts/CoursesLayout/style.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/NewsComponents/NewsCard/style.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/NewsComponents/RecentCourses/CurseCardForRecent/style.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/NewsComponents/RecentCourses/style.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/registerSteps/1.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/courses/index.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/courses/lessons/new/index.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/courses/lessons/new/style.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/courses/style.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/index.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/pages/news/style.ts" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,32 +104,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="C:\Users\Mark\Desktop\PROJECTS\timetabler-web\node_modules\typescript\lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/rusm/projects/time-tabler-webme/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/rusm/projects/time-tabler-webme/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/rusm/projects/time-tabler-webme/node_modules/typescript/lib&quot;,
+    &quot;typescript.add.unambiguous.imports.on.the.fly&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/assets/icons" />
+      <recent name="$PROJECT_DIR$/src/store" />
       <recent name="C:\Users\Mark\Desktop\PROJECTS\timetabler-web\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Mark\Desktop\PROJECTS\timetabler-web\src\components\FormComponents" />
-      <recent name="$PROJECT_DIR$/store/features/tasks" />
-      <recent name="$PROJECT_DIR$/store/feature" />
+      <recent name="$PROJECT_DIR$/assets/icons" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/components/CoursesComponents/NewLesson/Blocks" />
+      <recent name="$PROJECT_DIR$/src/components/CoursesComponents" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -90,11 +144,23 @@
         <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="svgr" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="svgr" />
+      </scripts>
+      <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.svgr" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -124,6 +190,31 @@
       <workItem from="1646189531841" duration="2161000" />
       <workItem from="1646213339060" duration="4980000" />
       <workItem from="1646724174478" duration="4804000" />
+      <workItem from="1653298583896" duration="3694000" />
+      <workItem from="1653795256176" duration="618000" />
+      <workItem from="1654014089046" duration="1327000" />
+      <workItem from="1654335481547" duration="282000" />
+      <workItem from="1654335798701" duration="4329000" />
+      <workItem from="1654698317747" duration="7910000" />
+      <workItem from="1655058749752" duration="707000" />
+      <workItem from="1655059894266" duration="1448000" />
+      <workItem from="1655141560610" duration="1965000" />
+      <workItem from="1655232607378" duration="44000" />
+      <workItem from="1655317741628" duration="12000" />
+      <workItem from="1655480348124" duration="119000" />
+      <workItem from="1655480501107" duration="599000" />
+      <workItem from="1655488869954" duration="3193000" />
+      <workItem from="1655645221038" duration="745000" />
+      <workItem from="1655653222267" duration="1685000" />
+      <workItem from="1655713302015" duration="9618000" />
+      <workItem from="1655971424222" duration="2387000" />
+      <workItem from="1655985941324" duration="84000" />
+      <workItem from="1655986078901" duration="7969000" />
+      <workItem from="1656163256904" duration="2104000" />
+      <workItem from="1656173630094" duration="7811000" />
+      <workItem from="1656679197418" duration="746000" />
+      <workItem from="1656766212981" duration="621000" />
+      <workItem from="1656836785372" duration="13113000" />
     </task>
     <servers />
   </component>
@@ -140,5 +231,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
